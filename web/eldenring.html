@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Elden Ring 专题 · Hello Games</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+  <a class="brand" href="index.html">Hello Games</a>
+        <button id="nav-toggle" class="nav-toggle" aria-label="切换导航">☰</button>
+        <nav id="main-nav" class="main-nav" aria-label="主导航">
+          <a href="index.html">首页</a>
+          <a href="about.html">关于</a>
+          <a href="news.html">资讯</a>
+          <a href="topics.html">专题</a>
+          <a href="projects.html">作品</a>
+          <a href="contact.html">联系</a>
+          <button id="theme-toggle" class="theme-toggle" aria-label="切换主题">🌙</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="container section">
+        <h1>Elden Ring 专题</h1>
+        <p>关于《Elden Ring》最新 DLC、攻略与社区动态的聚合页面。</p>
+
+        <div style="display:grid;grid-template-columns:1fr;gap:1rem;margin-top:1rem">
+          <div>
+            <img src="assets/eldenring.jpg" alt="Elden Ring 封面" style="width:100%;max-width:900px;border-radius:8px;">
+          </div>
+          <div>
+            <h3>DLC 预告片</h3>
+            <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:8px">
+              <!-- 嵌入 Bilibili 播放器：使用 IGN 上传的 Elden Ring 预告（示例） -->
+              <iframe src="https://player.bilibili.com/player.html?bvid=BV1ug411P7gp" title="Elden Ring DLC" frameborder="0" allowfullscreen style="position:absolute;left:0;top:0;width:100%;height:100%"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <h2 style="margin-top:1.2rem">相关文章</h2>
+        <div id="eldenring-list" class="grid"></div>
+      </section>
+    </main>
+
+  <footer class="site-footer"><div class="container">© 2025 Hello Games</div></footer>
+    <script src="script.js"></script>
+    <script>
+      // 渲染标签为 Elden Ring 的相关文章
+      renderTopic('Elden Ring','eldenring-list');
+    </script>
+  </body>
+</html>

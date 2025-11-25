@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GTA6 专题 · Hello Games</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+  <a class="brand" href="index.html">Hello Games</a>
+        <button id="nav-toggle" class="nav-toggle" aria-label="切换导航">☰</button>
+        <nav id="main-nav" class="main-nav" aria-label="主导航">
+          <a href="index.html">首页</a>
+          <a href="about.html">关于</a>
+          <a href="news.html">资讯</a>
+          <a href="topics.html">专题</a>
+          <a href="projects.html">作品</a>
+          <a href="contact.html">联系</a>
+          <button id="theme-toggle" class="theme-toggle" aria-label="切换主题">🌙</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="container section">
+        <h1>GTA6 专题</h1>
+        <p>聚合关于《GTA6》的预告、配置、测试资讯与攻略。</p>
+
+        <div style="display:grid;grid-template-columns:1fr;gap:1rem;margin-top:1rem">
+          <div>
+            <!-- 示例封面图 -->
+            <img src="assets/gta6.jpg" alt="GTA6 封面" style="width:100%;max-width:900px;border-radius:8px;">
+          </div>
+          <div>
+            <h3>官方预告</h3>
+            <!-- 示例视频：替换为实际 YouTube 预告链接 -->
+            <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:8px">
+              <!-- 嵌入 Bilibili 播放器：BVID 来源于 Bilibili 搜索结果（示例：IGN 上传的预告） -->
+              <iframe src="https://player.bilibili.com/player.html?bvid=BV1heVpzvEKp" title="GTA6 预告" frameborder="0" allowfullscreen style="position:absolute;left:0;top:0;width:100%;height:100%"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <h2 style="margin-top:1.2rem">相关文章</h2>
+        <div id="gta6-list" class="grid"></div>
+      </section>
+    </main>
+
+  <footer class="site-footer"><div class="container">© 2025 Hello Games</div></footer>
+    <script src="script.js"></script>
+    <script>
+      // 渲染标签为 GTA6 的相关文章
+      renderTopic('GTA6','gta6-list');
+    </script>
+  </body>
+</html>

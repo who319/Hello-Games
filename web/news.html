@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>游戏资讯 · Hello Games</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+  <a class="brand" href="index.html">Hello Games</a>
+        <nav class="main-nav"><a href="index.html">首页</a> <a href="about.html">关于</a> <a href="news.html">资讯</a></nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="container section">
+        <h1>游戏资讯</h1>
+        <p>在这里你可以浏览最新的游戏新闻与攻略，使用搜索框检索标题或标签。</p>
+
+        <div class="news-controls" style="margin-bottom:0.75rem">
+          <input id="news-search" type="search" placeholder="搜索文章标题或标签（示例：GTA6，攻略）" style="width:100%;max-width:720px;padding:0.6rem;border-radius:8px;border:1px solid rgba(0,0,0,0.08);">
+        </div>
+
+        <div id="news-list" class="grid news-list">
+          <!-- 静态回退内容：直接嵌入 data/news.json 中的文章，确保在无 JS 或加载失败时仍能查看 -->
+          <article class="card">
+            <div class="news-meta">2025-11-20 · 官方公告</div>
+            <h3>《暗影传说》新资料片上线：探险者的崛起</h3>
+            <p style="color:var(--muted);flex:1">深受玩家期待的新资料片已正式上线，加入全新地图与职业平衡调整。</p>
+            <div style="margin-top:0.5rem"><span class="tag">RPG</span><span class="tag">资料片</span><span class="tag">更新</span></div>
+            <p style="margin-top:0.6rem"><a href="#" class="link" data-id="1">阅读全文</a></p>
+          </article>
+
+          <article class="card">
+            <div class="news-meta">2025-11-18 · 社区·攻略</div>
+            <h3>顶级主播分享：如何在竞技场保持连胜</h3>
+            <p style="color:var(--muted);flex:1">顶级主播总结了近期版本的开局与站位思路，适用于中高段位玩家。</p>
+            <div style="margin-top:0.5rem"><span class="tag">攻略</span><span class="tag">竞技</span></div>
+            <p style="margin-top:0.6rem"><a href="#" class="link" data-id="2">阅读全文</a></p>
+          </article>
+
+          <article class="card">
+            <div class="news-meta">2025-11-12 · 编辑推荐</div>
+            <h3>独立游戏推荐：像素解谜佳作《时光裂缝》</h3>
+            <p style="color:var(--muted);flex:1">一款融合了时间操控机制与解谜要素的独立游戏，适合喜欢慢节奏体验的玩家。</p>
+            <div style="margin-top:0.5rem"><span class="tag">独立</span><span class="tag">推荐</span><span class="tag">解谜</span></div>
+            <p style="margin-top:0.6rem"><a href="#" class="link" data-id="3">阅读全文</a></p>
+          </article>
+
+          <article class="card">
+            <div class="news-meta">2025-11-21 · 官方频道</div>
+            <h3>GTA6 正式公布首支预告片：地图规模与故事线曝光</h3>
+            <p style="color:var(--muted);flex:1">Rockstar 公布了《GTA6》的首支预告片，展示了开放世界城市与部分主线剧情设定。</p>
+            <div style="margin-top:0.5rem"><span class="tag">GTA6</span><span class="tag">预告</span><span class="tag">开放世界</span></div>
+            <p style="margin-top:0.6rem"><a href="#" class="link" data-id="4">阅读全文</a></p>
+          </article>
+
+          <article class="card">
+            <div class="news-meta">2025-11-21 · 编辑·硬件指南</div>
+            <h3>GTA6 系统需求猜想与优化建议（PC 玩家参考）</h3>
+            <p style="color:var(--muted);flex:1">基于预告片画面，编辑团队给出对最低与推荐配置的猜想，并提供优化建议。</p>
+            <div style="margin-top:0.5rem"><span class="tag">GTA6</span><span class="tag">配置</span><span class="tag">PC</span></div>
+            <p style="margin-top:0.6rem"><a href="#" class="link" data-id="5">阅读全文</a></p>
+          </article>
+
+          <article class="card">
+            <div class="news-meta">2025-11-22 · 社区报道</div>
+            <h3>GTA6 公测报名开启：如何参与并提高入选概率</h3>
+            <p style="color:var(--muted);flex:1">Rockstar 开放了限量公测报名，编辑整理了报名流程与提高被选中概率的小技巧。</p>
+            <div style="margin-top:0.5rem"><span class="tag">GTA6</span><span class="tag">Beta</span><span class="tag">测试</span></div>
+            <p style="margin-top:0.6rem"><a href="#" class="link" data-id="6">阅读全文</a></p>
+          </article>
+
+          <article class="card">
+            <div class="news-meta">2025-11-19 · FromSoftware 官方</div>
+            <h3>Elden Ring 官方宣布首个大型 DLC：时代之裂</h3>
+            <p style="color:var(--muted);flex:1">FromSoftware 正式宣布为《Elden Ring》推出大型扩展包“时代之裂”，将加入新区域与机制。</p>
+            <div style="margin-top:0.5rem"><span class="tag">Elden Ring</span><span class="tag">DLC</span><span class="tag">动作RPG</span></div>
+            <p style="margin-top:0.6rem"><a href="#" class="link" data-id="7">阅读全文</a></p>
+          </article>
+
+          <article class="card">
+            <div class="news-meta">2025-11-17 · Epic Games</div>
+            <h3>Fortnite 新赛季：跨界联动海量皮肤与限时玩法</h3>
+            <p style="color:var(--muted);flex:1">Epic 宣布新赛季包含多款联动皮肤与全新限时玩法，赛季通行证细节同时公开。</p>
+            <div style="margin-top:0.5rem"><span class="tag">Fortnite</span><span class="tag">赛季</span><span class="tag">联动</span></div>
+            <p style="margin-top:0.6rem"><a href="#" class="link" data-id="8">阅读全文</a></p>
+          </article>
+
+          <article class="card">
+            <div class="news-meta">2025-11-15 · Riot Games</div>
+            <h3>Valorant 本周补丁：地图微调与平衡更新（重要）</h3>
+            <p style="color:var(--muted);flex:1">Riot 发布本周补丁，包含若干地图微调与数位英雄的平衡修改，影响当前排位赛环境。</p>
+            <div style="margin-top:0.5rem"><span class="tag">Valorant</span><span class="tag">补丁</span><span class="tag">竞技</span></div>
+            <p style="margin-top:0.6rem"><a href="#" class="link" data-id="9">阅读全文</a></p>
+          </article>
+
+          <article class="card">
+            <div class="news-meta">2025-11-10 · CD Projekt RED</div>
+            <h3>Cyberpunk 2077：下一阶段更新带来性能优化与新剧情片段</h3>
+            <p style="color:var(--muted);flex:1">CDPR 推出本年度重要补丁，重点为性能优化与若干剧情支线的扩展。</p>
+            <div style="margin-top:0.5rem"><span class="tag">Cyberpunk 2077</span><span class="tag">更新</span><span class="tag">补丁</span></div>
+            <p style="margin-top:0.6rem"><a href="#" class="link" data-id="10">阅读全文</a></p>
+          </article>
+        </div>
+        <div id="news-empty" style="display:none;color:var(--muted);margin-top:0.6rem">没有找到符合条件的文章。</div>
+      </section>
+    </main>
+
+  <footer class="site-footer"><div class="container">© 2025 Hello Games</div></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
