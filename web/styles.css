@@ -1,7 +1,6 @@
 [data-parallax] {
   transition: transform 0.7s cubic-bezier(.4,.8,.2,1);
   will-change: transform;
-}
 .reveal-scale {
   opacity: 0;
   transform: scale(0.98) translateY(24px);
