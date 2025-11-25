@@ -68,6 +68,7 @@ function showCarousel(idx) {
     slide.classList.toggle('active',i===idx);
   });
   carouselIndex = idx;
+  console.log('[轮播] 当前索引:', idx);
 }
 function nextCarousel() {
   let idx = (carouselIndex+1)%carouselSlides.length;
@@ -86,6 +87,9 @@ if(carouselTrack && carouselSlides.length) {
   startCarouselAuto();
   nextBtn && nextBtn.addEventListener('click',()=>{nextCarousel();startCarouselAuto();});
   prevBtn && prevBtn.addEventListener('click',()=>{prevCarousel();startCarouselAuto();});
+  setInterval(()=>{
+    console.log('[轮播] 自动切换，当前索引:', carouselIndex);
+  }, 4000);
   // 支持左右滑动
   let startX = null;
   carouselTrack.addEventListener('touchstart',e=>{startX=e.touches[0].clientX;});
