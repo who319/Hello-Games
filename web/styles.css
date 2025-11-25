@@ -1,6 +1,7 @@
 [data-parallax] {
   transition: transform 0.7s cubic-bezier(.4,.8,.2,1);
   will-change: transform;
+}
 .reveal-scale {
   opacity: 0;
   transform: scale(0.98) translateY(24px);
@@ -13,30 +14,6 @@
 }
 /* Apple 风格大图轮播 */
 .main-nav a, .main-nav button {
-  position: relative;
-  display: inline-block;
-  padding: 0.5em 1em;
-  margin: 0 0.2em;
-  border-radius: 8px;
-  background: none;
-  color: inherit;
-  font: inherit;
-  cursor: pointer;
-  transition: background 0.25s, box-shadow 0.25s, color 0.25s;
-}
-.main-nav a:hover, .main-nav button:hover {
-  background: rgba(0,0,0,0.07);
-  color: #1976d2;
-  box-shadow: 0 2px 8px rgba(25,118,210,0.08);
-}
-.main-nav a:active, .main-nav button:active {
-  background: rgba(25,118,210,0.13);
-  color: #1565c0;
-}
-.main-nav .theme-toggle {
-  font-size: 1.2em;
-  padding: 0.5em 0.7em;
-}
 .hero-carousel {
   position: relative;
   width: 100%;
