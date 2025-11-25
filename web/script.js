@@ -358,11 +358,11 @@ document.addEventListener('keyup', (e)=>{
 // 专题面板（点击导航中的 topics.html 链接显示面板）
 // --------------------
 const TOPICS = [
-  {id:'gta6', title:'GTA6', img:'assets/gta6.jpg', excerpt:'Rockstar 最新大作专题', url:'gta6.html'},
-  {id:'eldenring', title:'Elden Ring', img:'assets/eldenring.jpg', excerpt:'艾尔登法环 DLC 与攻略', url:'eldenring.html'},
-  {id:'cyberpunk', title:'Cyberpunk 2077', img:'assets/cyberpunk.jpg', excerpt:'性能更新与剧情扩展', url:'cyberpunk.html'},
-  {id:'fortnite', title:'Fortnite', img:'assets/fortnite.jpg', excerpt:'赛季更新与联动活动', url:'fortnite.html'},
-  {id:'valorant', title:'Valorant', img:'assets/valorant.jpg', excerpt:'补丁说明与赛事集锦', url:'valorant.html'},
+  {id:'gta6', title:'GTA6', img:'../image/gta6.jpg', excerpt:'Rockstar 最新大作专题', url:'web/gta6.html'},
+  {id:'eldenring', title:'Elden Ring', img:'../image/eldenring.jpg', excerpt:'艾尔登法环 DLC 与攻略', url:'web/eldenring.html'},
+  {id:'cyberpunk', title:'Cyberpunk 2077', img:'../image/cyberpunk.jpg', excerpt:'性能更新与剧情扩展', url:'web/cyberpunk.html'},
+  {id:'fortnite', title:'Fortnite', img:'../image/fortnite.jpg', excerpt:'赛季更新与联动活动', url:'web/fortnite.html'},
+  {id:'valorant', title:'Valorant', img:'../image/valorant.jpg', excerpt:'补丁说明与赛事集锦', url:'web/valorant.html'},
   // 已移除暗影传说与时光裂缝专题
   // 如果需要恢复专题，请在此添加相应条目
 ];
